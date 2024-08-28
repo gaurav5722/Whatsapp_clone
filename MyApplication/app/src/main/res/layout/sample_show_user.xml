@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:src="@drawable/boyimagewithcircle"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:paddingTop="5px"
+            android:paddingBottom="5px"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:paddingTop="2px"
+            android:paddingBottom="2px"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvLastMessage"
+            android:layout_width="match_parent"
+            android:text="Lastmessage"
+            android:textSize="12dp"
+
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

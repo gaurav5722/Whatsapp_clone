@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="3dp"
+        android:maxHeight="400dp"
+        android:maxWidth="310dp"
+        android:background="@drawable/bg_sender"
+        android:minHeight="30dp">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp"/>
+        <TextView
+            android:id="@+id/tvSenderMessage"
+            android:layout_width="wrap_content"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Guideline"
+           app:layout_constraintBottom_toTopOf="@+id/tvStime"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:maxWidth="270dp"
+            android:minWidth="50dp"
+            android:inputType="textImeMultiLine"
+            android:text="@string/message"/>
+        <TextView
+            android:id="@+id/tvStime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_12_57"
+            android:padding="3dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="3dp"
+
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="@+id/Guideline"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

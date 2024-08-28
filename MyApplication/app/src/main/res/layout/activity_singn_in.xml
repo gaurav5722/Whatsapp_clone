@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/grayBackground"
+    tools:context=".SignInActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/whatsapp_svgrepo_com"
+            android:layout_marginBottom="14dp"
+            >
+
+        </ImageView>
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
+            android:padding="9dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:inputType="text"
+            android:hint="Password"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="9dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp">
+
+        </EditText>
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click For Signup"
+            android:textColor="@color/black"
+            android:gravity="right"
+            android:padding="9dp">
+
+        </TextView>
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_marginTop="10dp"
+            android:text="SignIn"
+            android:padding="15dp"
+            app:cornerRadius="20dp">
+
+        </Button>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/google_color_svgrepo_com"
+                android:text="google"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="20dp" />
+            <Button
+                android:id="@+id/btn_fb"
+                android:layout_width="150dp"
+                android:drawableLeft="@drawable/facebook_svgrepo_com"
+                android:layout_height="wrap_content"
+                app:cornerRadius="20dp"
+                android:padding="15dp"
+                android:backgroundTint="@color/fb_color"
+                android:text="facebook"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvSignup"
+            android:text="Signup With phone"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
